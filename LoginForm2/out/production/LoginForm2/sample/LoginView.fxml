@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgMotelView" fitHeight="400.0" fitWidth="200.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Motel.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="32.0" layoutY="133.0" text="Username">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="163.0" text="Password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFldUsername" layoutX="115.0" layoutY="130.0" prefHeight="26.0" prefWidth="173.0" promptText="Username" />
+            <PasswordField fx:id="txtFldPassword" layoutX="115.0" layoutY="160.0" prefHeight="26.0" prefWidth="173.0" promptText="Password" />
+            <Label fx:id="lblLoginProcess" layoutX="34.0" layoutY="191.0" prefHeight="19.0" prefWidth="253.0" textFill="RED">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgLockView" fitHeight="32.0" fitWidth="40.0" layoutX="99.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/lock-icon-vector-illustration.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnRegister" layoutX="31.0" layoutY="227.0" mnemonicParsing="false" onAction="#setBtnRegisterAction" prefHeight="32.0" prefWidth="259.0" style="-fx-background-color: #000000;" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLogin" layoutX="31.0" layoutY="266.0" mnemonicParsing="false" onAction="#setBtnLoginAction" prefHeight="32.0" prefWidth="259.0" style="-fx-background-color: #000000;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancel" layoutX="31.0" layoutY="305.0" mnemonicParsing="false" onAction="#setBtnCancelAction" prefHeight="32.0" prefWidth="259.0" style="-fx-background-color: #000000;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </right>
+</BorderPane>
